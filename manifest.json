@@ -1,0 +1,49 @@
+{
+  "name": "Taylor Swift 2048 Game",
+  "short_name": "Taylor Swift 2048",
+  "description": "Play the ultimate Taylor Swift 2048 puzzle game featuring all her iconic eras! Free online browser game.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#faf8ef",
+  "theme_color": "#ff6b6b",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en",
+  "categories": ["games", "entertainment", "puzzle"],
+  "icons": [
+    {
+      "src": "meta/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "favicon.jpg",
+      "sizes": "32x32",
+      "type": "image/jpeg"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "style/taylor-swift.jpg",
+      "sizes": "600x400",
+      "type": "image/jpeg",
+      "form_factor": "wide",
+      "label": "Taylor Swift 2048 Game Screenshot"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Play Taylor Swift 2048",
+      "short_name": "Play Game",
+      "description": "Start playing Taylor Swift 2048 puzzle game",
+      "url": "/",
+      "icons": [
+        {
+          "src": "meta/apple-touch-icon.png",
+          "sizes": "180x180"
+        }
+      ]
+    }
+  ]
+}

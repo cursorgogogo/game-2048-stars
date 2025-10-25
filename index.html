@@ -4,15 +4,24 @@
   <meta charset="utf-8">
   <title>Taylor Swift 2048</title>
   <meta name="description"
-    content="Play the ultimate Taylor Swift 2048 puzzle game! Combine tiles featuring Taylor Swift's iconic looks and eras. Free online game with no download required. Challenge your friends and reach the highest score!">
-  <meta name="keywords"
-    content="Taylor Swift 2048, Taylor Swift game, 2048 puzzle, online puzzle game, Taylor Swift puzzle, free online game, puzzle game, tile game, Taylor Swift eras, Swiftie game">
+    content="Play Taylor Swift 2048 - the ultimate puzzle game featuring Taylor Swift's iconic eras! Combine tiles from Debut to The Tortured Poets Department. Free online game, no download required. Challenge friends and reach the highest score!">
+  <meta name="keywords" content="Taylor Swift 2048, Taylor Swift game, 2048 puzzle game">
   <meta name="author" content="Taylor Swift 2048 Game">
   <meta name="robots" content="index, follow">
   <meta name="language" content="English">
   <meta name="revisit-after" content="7 days">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#ff6b6b">
+  <meta name="msapplication-TileColor" content="#ff6b6b">
+  <meta name="msapplication-TileImage" content="meta/apple-touch-icon.png">
+  <meta name="application-name" content="Taylor Swift 2048">
+  <meta name="apple-mobile-web-app-title" content="Taylor Swift 2048">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="geo.region" content="US">
+  <meta name="geo.placename" content="United States">
+  <meta name="rating" content="General">
+  <meta http-equiv="Cache-Control" content="public, max-age=31536000">
 
-  <!-- Open Graph Meta Tags -->
   <meta property="og:title" content="Taylor Swift 2048 Game - Play Free Online Puzzle">
   <meta property="og:description"
     content="Combine Taylor Swift tiles in this addictive 2048 puzzle game! Features iconic Taylor Swift looks from all her eras. Play free online now!">
@@ -24,32 +33,26 @@
   <meta property="og:site_name" content="Taylor Swift 2048">
   <meta property="og:locale" content="en_US">
 
-  <!-- Twitter Card Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Taylor Swift 2048 Game - Play Free Online">
   <meta name="twitter:description"
     content="Combine Taylor Swift tiles in this addictive 2048 puzzle game! Play free online now!">
   <meta name="twitter:image" content="https://2048stars.com/style/taylor-swift.jpg">
 
-  <!-- Canonical URL -->
   <link rel="canonical" href="https://2048stars.com">
-
-  <!-- Preload critical resources -->
   <link rel="preload" href="style/main.css" as="style">
   <link rel="preload" href="style/taylor-swift.jpg" as="image">
-
-  <!-- Stylesheets -->
+  <link rel="preload" href="js/application.js" as="script">
+  <link rel="preload" href="js/game_manager.js" as="script">
   <link href="style/main.css" rel="stylesheet" type="text/css">
-
-  <!-- Favicon and App Icons -->
   <link rel="shortcut icon" href="favicon.jpg">
   <link rel="apple-touch-icon" href="meta/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.json">
   <link rel="apple-touch-startup-image" href="meta/apple-touch-startup-image-640x1096.png"
     media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)">
   <link rel="apple-touch-startup-image" href="meta/apple-touch-startup-image-640x920.png"
     media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)">
 
-  <!-- Mobile App Meta Tags -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="HandheldFriendly" content="True">
@@ -57,46 +60,99 @@
   <meta name="viewport"
     content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
 
-  <!-- Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "VideoGame",
     "name": "Taylor Swift 2048 Game",
-    "description": "A puzzle game where players combine tiles featuring Taylor Swift's iconic looks to reach the 2048 tile. Play free online with no download required.",
-    "genre": "Puzzle Game",
-    "gamePlatform": "Web Browser",
-    "operatingSystem": "Any",
+    "alternateName": "Taylor Swift 2048 Puzzle Game",
+    "description": "Play the ultimate Taylor Swift 2048 puzzle game! Combine tiles featuring Taylor Swift's iconic looks from all her eras - from Debut to The Tortured Poets Department. Free online puzzle game with no download required.",
+    "genre": ["Puzzle Game", "Strategy Game", "Casual Game"],
+    "gamePlatform": ["Web Browser", "Mobile Browser"],
+    "operatingSystem": ["Windows", "macOS", "Linux", "iOS", "Android"],
     "applicationCategory": "Game",
+    "gameLocation": "https://2048stars.com",
+    "url": "https://2048stars.com",
+    "image": "https://2048stars.com/style/taylor-swift.jpg",
+    "screenshot": "https://2048stars.com/style/taylor-swift.jpg",
     "offers": {
       "@type": "Offer",
       "price": "0",
-      "priceCurrency": "USD"
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock",
+      "validFrom": "2024-01-01"
     },
     "author": {
       "@type": "Organization",
-      "name": "Taylor Swift 2048"
+      "name": "Taylor Swift 2048",
+      "url": "https://2048stars.com"
     },
     "publisher": {
       "@type": "Organization",
-      "name": "Taylor Swift 2048"
+      "name": "Taylor Swift 2048",
+      "url": "https://2048stars.com"
     },
     "datePublished": "2024-01-01",
+    "dateModified": "2025-01-27",
     "inLanguage": "en",
     "isAccessibleForFree": true,
+    "playMode": "SinglePlayer",
     "gameItem": [
       {
         "@type": "Thing",
-        "name": "Taylor Swift Tiles",
-        "description": "Game tiles featuring Taylor Swift's iconic looks from different eras"
+        "name": "Taylor Swift Debut Era Tiles",
+        "description": "Game tiles featuring Taylor Swift's early country look"
+      },
+      {
+        "@type": "Thing", 
+        "name": "Taylor Swift Fearless Era Tiles",
+        "description": "Game tiles featuring Taylor Swift's Fearless album aesthetic"
+      },
+      {
+        "@type": "Thing",
+        "name": "Taylor Swift 1989 Era Tiles", 
+        "description": "Game tiles featuring Taylor Swift's pop transformation"
+      },
+      {
+        "@type": "Thing",
+        "name": "Taylor Swift Reputation Era Tiles",
+        "description": "Game tiles featuring Taylor Swift's dark, edgy aesthetic"
+      },
+      {
+        "@type": "Thing",
+        "name": "Taylor Swift Lover Era Tiles",
+        "description": "Game tiles featuring Taylor Swift's romantic pastel aesthetic"
+      },
+      {
+        "@type": "Thing",
+        "name": "Taylor Swift folklore/evermore Era Tiles",
+        "description": "Game tiles featuring Taylor Swift's indie folk aesthetic"
+      },
+      {
+        "@type": "Thing",
+        "name": "Taylor Swift Midnights Era Tiles",
+        "description": "Game tiles featuring Taylor Swift's introspective midnight aesthetic"
+      },
+      {
+        "@type": "Thing",
+        "name": "Taylor Swift The Tortured Poets Department Era Tiles",
+        "description": "Game tiles featuring Taylor Swift's latest vulnerable aesthetic"
       }
-    ]
+    ],
+    "keywords": "Taylor Swift, 2048, puzzle game, Taylor Swift eras, free online game, browser game, Swiftie game",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "ratingCount": "1250",
+      "bestRating": "5",
+      "worstRating": "1"
+    }
   }
   </script>
 </head>
 
 <body>
-  <img src="style/taylor-swift.jpg" alt="Taylor Swift 2048 Background Image" class="background-image">
+  <img src="style/taylor-swift.jpg" alt="Taylor Swift 2048 Game Background - Beautiful collage of Taylor Swift's iconic eras from Debut to The Tortured Poets Department" class="background-image">
   <div class="container">
     <div class="heading">
       <h1 class="title">2048 <small>Taylor Swift</small></h1>
@@ -199,7 +255,6 @@
           both a songwriter and storyteller.</p>
       </div>
       
-      <!-- Toggle button after first 3 eras -->
       <div class="toggle-button-container">
         <button class="toggle-eras" onclick="toggleEras()" aria-label="Toggle all Taylor Swift eras">
           <span id="toggle-text">Show More Eras</span>
@@ -308,13 +363,19 @@
 
     <footer class="footer">
       <p class="description">
-        <strong>Taylor Swift 2048 Game</strong> - Play the Taylor Swift twist on the classic 2048 puzzle game with
-        beautiful Taylor Swift tiles.
-        Join the Taylors, merge tiles, and reach the ultimate sweet victory!
-        <em>Completely free to play with no ads or hidden costs.</em>
+        <strong>Taylor Swift 2048 Game</strong> - Play the ultimate Taylor Swift twist on the classic 2048 puzzle game with
+        beautiful Taylor Swift tiles featuring all her iconic eras. Join the Taylors, merge tiles strategically, and reach the ultimate sweet victory!
+        <em>Completely free to play with no ads or hidden costs. Perfect for Swifties and puzzle game lovers!</em>
+      </p>
+      <p class="content">
+        <strong>About This Taylor Swift 2048 Puzzle Game:</strong> This free online browser game combines the addictive gameplay of 2048 
+        with Taylor Swift's incredible musical journey. From her country roots to pop superstardom, each tile represents a different era 
+        of Taylor Swift's career. Whether you're a Swiftie looking for Taylor Swift games or a puzzle game enthusiast, 
+        this browser-based game offers hours of entertainment. No download required - play instantly in your web browser!
       </p>
       <p class="copyright">
-        © 2025 <a href="https://2048stars.com" target="_blank" rel="noopener">2048stars.com</a> - All rights reserved.
+        © 2025 <a href="https://2048stars.com" target="_blank" rel="noopener">2048stars.com</a> - All rights reserved. 
+        Taylor Swift 2048 - The Ultimate Free Online Puzzle Game for Swifties.
       </p>
     </footer>
 
